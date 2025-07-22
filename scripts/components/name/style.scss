@@ -1,0 +1,17 @@
+.name {
+  display: flex;
+  flex-direction: column;
+
+  &__pretitle {
+
+  }
+
+  &__title {
+    margin-block-start: auto;
+    margin-block-end: 6px;
+  }
+
+  &__subtitle {
+    color: var(--gray);
+  }
+}

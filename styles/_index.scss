@@ -1,0 +1,36 @@
+@forward 'base';
+@forward 'utilities';
+
+$block-list: (
+        'profile',
+        'name',
+        'languages',
+        'experience',
+        'tools',
+        'education',
+        'interests',
+        'contact'
+);
+
+#app {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 124px);
+  grid-template-areas:
+    'profile name languages languages'
+    'experience experience experience tools'
+    'education education interests interests'
+    'education education contact contact';
+}
+
+.block {
+  padding: var(--size-x6);
+  border-radius: var(--size-x6);
+  background-color: var(--gray-light);
+}
+
+@each $block in $block-list {
+  .block_#{$block} {
+    grid-area: #{$block};
+  }
+}

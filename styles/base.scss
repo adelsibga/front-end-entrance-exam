@@ -1,0 +1,56 @@
+@forward 'normalize.css';
+
+:root {
+  --size-base: 2px;
+  --size-x1: var(--size-base);
+  --size-x2: calc(var(--size-base) * 2);
+  --size-x3: calc(var(--size-base) * 3);
+  --size-x4: calc(var(--size-base) * 4);
+  --size-x5: calc(var(--size-base) * 5);
+  --size-x6: calc(var(--size-base) * 6);
+  --size-x7: calc(var(--size-base) * 7);
+  --size-x8: calc(var(--size-base) * 8);
+  --size-x9: calc(var(--size-base) * 9);
+  --size-x10: calc(var(--size-base) * 10);
+  --size-x11: calc(var(--size-base) * 11);
+  --size-x12: calc(var(--size-base) * 12);
+  --size-x13: calc(var(--size-base) * 13);
+  --size-x14: calc(var(--size-base) * 14);
+  --size-x15: calc(var(--size-base) * 15);
+  --size-x16: calc(var(--size-base) * 16);
+  --size-x17: calc(var(--size-base) * 17);
+  --size-x18: calc(var(--size-base) * 18);
+  --size-x19: calc(var(--size-base) * 19);
+  --size-x20: calc(var(--size-base) * 20);
+
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #5c5c5c;
+  --gray-light: #f0f0f0;
+
+  --accent: #28d979;
+  --accent-2: rgba(126, 115, 18, 0.40);
+  --accent-3: #ddf163;
+  --accent-4: #f6ed1e;
+  --accent-5: #149063;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  margin: 0;
+}
+
+[contenteditable]:focus {
+  outline: 1px solid var(--gray);
+  border-radius: var(--size-x2);
+}

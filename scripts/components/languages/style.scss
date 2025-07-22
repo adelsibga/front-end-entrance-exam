@@ -1,0 +1,31 @@
+$coeff: 1.68;
+
+.languages {
+  &__title {
+    margin-block-end: var(--size-x8);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--size-x5);
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: var(--size-x9);
+
+    & span {
+      width: 58px;
+    }
+  }
+
+  &__list-item-level {
+    width: calc($coeff * var(--lang-level) * 1px);
+    height: var(--size-x6);
+    border-radius: 3px;
+    background-color: var(--accent);
+  }
+}
