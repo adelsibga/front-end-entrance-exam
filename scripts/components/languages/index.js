@@ -1,20 +1,24 @@
 import './style.scss';
 
 export function drawLanguagesSection(data) {
-  const languagesItem = data.list.map((item, index) => `
-    <li 
-      class='languages__list-item'
-    >
-      <span 
-        class='text-5 f-w-500' 
-        contenteditable 
-        data-key='languages.item.${index}.label'
+  const languagesItem = data.list.map((item, index) => {
+    const dataKey = `languages.item.${index}`;
+
+    return `
+      <li 
+        class='languages__list-item'
       >
-        ${item.label}
-      </span>
-      <div class='languages__list-item-level' style='--lang-level: ${item.level}'></div>
-    </li>
-  `).join('');
+        <span 
+          class='text-5 f-w-500' 
+          contenteditable 
+          data-key='${dataKey}.label'
+        >
+          ${item.label}
+        </span>
+        <div class='languages__list-item-level' style='--lang-level: ${item.level}'></div>
+      </li>
+    `;
+  }).join('');
 
   return `
     <div class='languages block block_languages'>

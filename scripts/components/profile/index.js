@@ -1,10 +1,10 @@
 import './style.scss';
 
-export function drawProfileSection() {
+export function drawProfileSection(data) {
   return `
     <img
       class='profile block block_profile'
-      src='../../../public/profileImg.png'
-      alt='profileImg'
+      src='${data.imgUrl}'
+      alt='${data.alt}'
     >`;
 }

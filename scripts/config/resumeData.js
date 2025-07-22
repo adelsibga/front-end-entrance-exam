@@ -1,4 +1,8 @@
 export const resumeData = {
+  profile: {
+    imgUrl: '../../../public/profileImg.png',
+    alt: 'profileImg',
+  },
   name: {
     pretitle: 'Hello 👋🏻 I’m',
     title: 'Karthik SR',
@@ -16,12 +20,13 @@ export const resumeData = {
     title: 'Experience',
     list: [
       {
-        date: 'Jun. 2023 - Present',
-        position: 'Marketing Manager',
-        format: 'Pankayam | Full-time',
+        date: 'Sep. 2021 - Jun. 2023',
+        position: 'Legal Assistant',
+        format: 'Law Firm | Intern',
         description: [
-          'Strategy development and planning of campaigns that promote the business and generate genuine traffic',
-          'SEO Content Creation for Blogs, Website, Social media',
+          'Provide administrative support to lawyer and enhance office effectiveness',
+          'Handle communication with clients, witnesses etc.',
+          'prepare case briefs and summarize depositions, interrogatories and testimony',
         ],
       },
       {
@@ -35,13 +40,12 @@ export const resumeData = {
         ],
       },
       {
-        date: 'Sep. 2021 - Jun. 2023',
-        position: 'Legal Assistant',
-        format: 'Law Firm | Intern',
+        date: 'Jun. 2023 - Present',
+        position: 'Marketing Manager',
+        format: 'Pankayam | Full-time',
         description: [
-          'Provide administrative support to lawyer and enhance office effectiveness',
-          'Handle communication with clients, witnesses etc.',
-          'prepare case briefs and summarize depositions, interrogatories and testimony',
+          'Strategy development and planning of campaigns that promote the business and generate genuine traffic',
+          'SEO Content Creation for Blogs, Website, Social media',
         ],
       },
     ],
