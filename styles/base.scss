@@ -50,7 +50,16 @@ h1 {
   margin: 0;
 }
 
-[contenteditable]:focus {
-  outline: 1px solid var(--gray);
-  border-radius: var(--size-x2);
+[contenteditable] {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+
+  & {
+    :focus {
+      outline: 1px solid var(--gray);
+    }
+  }
 }

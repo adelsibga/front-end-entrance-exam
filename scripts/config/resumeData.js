@@ -1,6 +1,6 @@
 export const resumeData = {
   profile: {
-    imgUrl: '../../../public/profileImg.png',
+    imgUrl: '/profileImg.png',
     alt: 'profileImg',
   },
   name: {

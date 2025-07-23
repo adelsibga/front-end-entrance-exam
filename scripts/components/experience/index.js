@@ -7,11 +7,12 @@ export function drawExperienceSection(data) {
     ? [...data.list]
       .reverse()
       .map((item, reversedIndex) => {
+        const isEmptyItem = Object.keys(item).length === 0;
         const isMostRecent = reversedIndex === 0;
         const originalIndex = data.list.length - 1 - reversedIndex;
         const dataKey = `experience.item.${originalIndex}`;
 
-        return `
+        return !isEmptyItem ? `
           <li class='experience__list-item ${isMostRecent ? 'experience__list-item_recent' : ''}'>
             <div class='experience__header header'>
               ${item.date?.length ? `
@@ -39,8 +40,12 @@ export function drawExperienceSection(data) {
               ${item.description?.length ? `
                 <ul class='body__description-list'>
                   ${item.description.map((desc, descIndex) => `
-                    <li class='body__description-list-item' contenteditable 
-                        data-key='${dataKey}.description.${descIndex}'>
+                    <li
+                      class='body__description-list-item'
+                      contenteditable 
+                      data-key='${dataKey}.description.${descIndex}'
+                      style='--line-clamp: 10'
+                    >
                       ${desc}
                     </li>
                   `).join('')}
@@ -48,7 +53,7 @@ export function drawExperienceSection(data) {
               ` : ''}
             </div>
           </li>
-        `;
+        ` : '';
       }).join('')
     : `<li class='experience__list-item experience__list-item_empty-experience'>No experience</li>`;
 
@@ -61,10 +66,11 @@ export function drawExperienceSection(data) {
       >
         ${data.title}
       </h2>
-      
-      <ul class='experience__list'>
-        ${listContent}
-      </ul>
+      ${!!listContent ? `
+        <ul class='experience__list'>
+          ${listContent}
+        </ul>
+      ` : ''}
     </div>
   `;
 }
