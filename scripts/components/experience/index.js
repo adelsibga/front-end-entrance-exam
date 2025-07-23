@@ -29,12 +29,22 @@ export function drawExperienceSection(data) {
             <div class='list-item__body body'>
               <div class='body__description-left'>
                 ${item.position?.length ? `
-                  <h3 class='body__position text-5 f-w-500' contenteditable data-key='${dataKey}.position'>
+                  <h3
+                    class='body__position text-5 f-w-500'
+                    contenteditable
+                    data-key='${dataKey}.position'
+                    style='--line-clamp: 2'
+                  >
                     ${item.position}
                   </h3>
                 ` : ''}
                 ${item.format?.length ? `
-                  <p class='body__format ${isMostRecent ? 'body__format_recent' : ''} text-4 f-w-400' contenteditable data-key='${dataKey}.format'>
+                  <p
+                    class='body__format ${isMostRecent ? 'body__format_recent' : ''} text-4 f-w-400'
+                    contenteditable
+                    data-key='${dataKey}.format'
+                    style='--line-clamp: 2'
+                  >
                   ${item.format}
                 </p>
                 ` : ''}       

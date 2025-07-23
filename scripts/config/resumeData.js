@@ -1,6 +1,6 @@
 export const resumeData = {
   profile: {
-    imgUrl: '/profileImg.png',
+    imgUrl: '/images/profileImg.png',
     alt: 'profileImg',
   },
   name: {
@@ -49,5 +49,36 @@ export const resumeData = {
         ],
       },
     ],
+  },
+  tools: {
+    title: 'Tools',
+    list: [
+      {
+        category: 'design',
+        icons: [
+          'logoFigma.svg',
+          'adobePhotoshop.svg',
+          'adobeIllustrator.svg',
+          'adobePremiere.svg',
+          'logoNotion.svg',
+          'logoMeet.svg',
+        ]
+      },{
+        category: 'no-code',
+        icons: [
+          'logoZapìer.svg',
+          'logoWebflow.svg',
+          'logoFramer.svg',
+          'logoWordpress.svg',
+        ]
+      },{
+        category: 'artificial intelligence',
+        icons: [
+          'logoChatGPT.svg',
+          'logoCopilot.svg',
+          'logoMidjourney.svg',
+        ]
+      },
+    ]
   },
 };
