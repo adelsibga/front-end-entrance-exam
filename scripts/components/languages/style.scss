@@ -1,4 +1,4 @@
-$coeff: 1.68;
+$coeff: 0.84;
 
 .languages {
   &__title {
@@ -8,7 +8,7 @@ $coeff: 1.68;
   &__list {
     display: flex;
     flex-direction: column;
-    row-gap: var(--size-x5);
+    row-gap: var(--size-x2);
   }
 
   &__list-item {
@@ -19,18 +19,18 @@ $coeff: 1.68;
 
     & span {
       display: -webkit-box;
+      overflow: hidden;
+      width: calc(29 * var(--size-x1));
+      text-overflow: ellipsis;
       -webkit-line-clamp: 1;
       -webkit-box-orient: vertical;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      width: 58px;
     }
   }
 
   &__list-item-level {
-    width: calc($coeff * var(--lang-level) * 1px);
+    width: calc($coeff * var(--lang-level) * var(--size-x1));
     height: var(--size-x6);
-    border-radius: 3px;
+    border-radius: calc(1.5 * var(--size-x1));
     background-color: var(--accent);
   }
 }

@@ -57,9 +57,8 @@ h1 {
   -webkit-line-clamp: var(--line-clamp, 1);
   -webkit-box-orient: vertical;
 
-  & {
-    :focus {
-      outline: 1px solid var(--gray);
-    }
+  &:focus-visible {
+    border-radius: var(--size-x1);
+    outline: calc(0.5 * var(--size-x1)) solid var(--gray);
   }
 }

@@ -13,35 +13,37 @@ export function drawExperienceSection(data) {
         const dataKey = `experience.item.${originalIndex}`;
 
         return !isEmptyItem ? `
-          <li class='experience__list-item ${isMostRecent ? 'experience__list-item_recent' : ''}'>
-            <div class='experience__header header'>
+          <li class='experience__list-item list-item ${isMostRecent ? 'experience__list-item_recent' : ''}'>
+            <div class='list-item__header header'>
               ${item.date?.length ? `
-                <span class='header__date' contenteditable data-key='${dataKey}.date'>
+                <span class='header__date f-w-500 text-4' contenteditable data-key='${dataKey}.date'>
                   ${item.date}
                 </span>
               ` : ''}
               ${isMostRecent ? `
-                <span class='header__badge' contenteditable data-key='${dataKey}.badge'>
+                <span class='header__badge f-w-500 text-4' contenteditable data-key='${dataKey}.badge'>
                   most recent
                 </span>
               ` : ''}
             </div>
-            <div class='experience__body body'>
-              ${item.position?.length ? `
-                <h3 class='body__position' contenteditable data-key='${dataKey}.position'>
-                  ${item.position}
-                </h3>
-              ` : ''}
-              ${item.format?.length ? `
-                <p class='body__format' contenteditable data-key='${dataKey}.format'>
-                ${item.format}
-              </p>
-              ` : ''}
+            <div class='list-item__body body'>
+              <div class='body__description-left'>
+                ${item.position?.length ? `
+                  <h3 class='body__position text-5 f-w-500' contenteditable data-key='${dataKey}.position'>
+                    ${item.position}
+                  </h3>
+                ` : ''}
+                ${item.format?.length ? `
+                  <p class='body__format ${isMostRecent ? 'body__format_recent' : ''} text-4 f-w-400' contenteditable data-key='${dataKey}.format'>
+                  ${item.format}
+                </p>
+                ` : ''}       
+              </div>
               ${item.description?.length ? `
                 <ul class='body__description-list'>
                   ${item.description.map((desc, descIndex) => `
                     <li
-                      class='body__description-list-item'
+                      class='body__description-list-item text-4 f-w-400'
                       contenteditable 
                       data-key='${dataKey}.description.${descIndex}'
                       style='--line-clamp: 10'
@@ -60,7 +62,7 @@ export function drawExperienceSection(data) {
   return `
     <div class='experience block block_experience'>
       <h2 
-        class='experience__title' 
+        class='experience__title text-7 f-w-500' 
         contenteditable 
         data-key='experience.title'
       >

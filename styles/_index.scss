@@ -16,9 +16,9 @@ $block-list: (
   display: grid;
   width: fit-content;
   margin: 0 auto;
-  padding: 15px 20px;
-  gap: 20px;
-  grid-template-columns: repeat(4, 124px);
+  padding: calc(7.5 * var(--size-x1)) var(--size-x10);
+  gap: var(--size-x10);
+  grid-template-columns: repeat(4, calc(62 * var(--size-x1)));
   grid-template-areas:
     'profile name languages languages'
     'experience experience experience tools'
