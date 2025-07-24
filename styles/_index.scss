@@ -17,7 +17,7 @@ $block-list: (
   display: grid;
   max-width: calc(180 * var(--size-x1));
   margin: 0 auto;
-  padding: calc(7.5 * var(--size-x1)) var(--size-x10);
+  padding: calc(5.5 * var(--size-x1)) var(--size-x10);
   gap: var(--size-x10);
   grid-template-columns: 1fr;
   grid-template-areas:

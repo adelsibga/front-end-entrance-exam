@@ -1,7 +1,7 @@
 import './style.scss';
 
 export function drawToolsSection(data) {
-  const TOOLS_ICONS_DIR = '/images/tools/';
+  const TOOLS_ICONS_DIR = './images/tools/';
 
   const renderItem = (icon, iconIndex) => `
     <li class='tools__list-item'>
