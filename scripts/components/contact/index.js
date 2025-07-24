@@ -7,7 +7,7 @@ export function drawContactSection(data) {
         class='contact__title text-7 f-w-500'
         contenteditable
         data-key='contact.title'
-        style='--line-clamp: 2;'
+        style='--line-clamp: 3;'
       >
         ${!!data.title ? data.title : 'Let´s chat! I´m ready to work on exciting projects'}
       </h2>

@@ -20,7 +20,8 @@ $coeff: 0.84;
     & span {
       display: -webkit-box;
       overflow: hidden;
-      width: calc(29 * var(--size-x1));
+      width: 100%;
+      max-width: calc(29 * var(--size-x1));
       text-overflow: ellipsis;
       -webkit-line-clamp: 1;
       -webkit-box-orient: vertical;

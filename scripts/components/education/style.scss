@@ -12,7 +12,8 @@ $icon-size: calc(5.5 * var(--size-x1));
     gap: var(--size-x6);
 
     & .list-item {
-      width: calc(58 * var(--size-x1));
+      width: 100%;
+      max-width: calc(58 * var(--size-x1));
       height: min-content;
       padding: var(--size-x4);
       border-radius: var(--size-x5);

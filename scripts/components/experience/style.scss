@@ -47,7 +47,8 @@
 
       &__date {
         line-height: 1.6;
-        width: calc(62 * var(--size-x1));
+        width: 100%;
+        max-width: calc(62 * var(--size-x1));
       }
 
       &__badge {
@@ -77,11 +78,13 @@
       }
 
       &__description-left {
-        width: calc(62 * var(--size-x1));
+        width: 100%;
+        max-width: calc(62 * var(--size-x1));
       }
 
       &__description-list {
-        width: calc(120 * var(--size-x1));
+        width: 100%;
+        max-width: calc(120 * var(--size-x1));
       }
 
       &__description-list-item {
