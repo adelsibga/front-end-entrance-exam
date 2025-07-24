@@ -62,24 +62,24 @@ export const resumeData = {
           'adobePremiere.svg',
           'logoNotion.svg',
           'logoMeet.svg',
-        ]
-      },{
+        ],
+      }, {
         category: 'no-code',
         icons: [
           'logoZapìer.svg',
           'logoWebflow.svg',
           'logoFramer.svg',
           'logoWordpress.svg',
-        ]
-      },{
+        ],
+      }, {
         category: 'artificial intelligence',
         icons: [
           'logoChatGPT.svg',
           'logoCopilot.svg',
           'logoMidjourney.svg',
-        ]
+        ],
       },
-    ]
+    ],
   },
   education: {
     title: 'Education',
@@ -93,7 +93,7 @@ export const resumeData = {
           'illustration',
           'adobe',
         ],
-        place: 'Coursera'
+        place: 'Coursera',
       },
       {
         date: '2017 - 2022',
@@ -104,7 +104,7 @@ export const resumeData = {
           'contracts',
           'internationalLaws',
         ],
-        place: 'University of Kerala'
+        place: 'University of Kerala',
       },
       {
         date: '2023',
@@ -119,8 +119,23 @@ export const resumeData = {
           'figma',
           'Ux',
         ],
-        place: 'Coursera'
-      }
+        place: 'Coursera',
+      },
     ],
-  }
+  },
+  interests: {
+    title: 'Interests',
+    list: [
+      'branding',
+      'design',
+      'photography',
+      'artificial intelligence',
+      'illustration',
+      'typography',
+      'social networks',
+      'research',
+      'dron pilot',
+      'games',
+    ],
+  },
 };
