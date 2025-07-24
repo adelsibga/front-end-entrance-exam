@@ -51,8 +51,10 @@ h1 {
 }
 
 [contenteditable] {
+  position: relative;
   display: -webkit-box;
   overflow: hidden;
+  cursor: pointer;
   text-overflow: ellipsis;
   -webkit-line-clamp: var(--line-clamp, 1);
   -webkit-box-orient: vertical;

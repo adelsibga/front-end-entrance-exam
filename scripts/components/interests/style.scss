@@ -7,8 +7,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: calc(115 * var(--size-x1));
     gap: var(--size-x4);
+
+    @media (min-width: 1024px) {
+      max-width: calc(115 * var(--size-x1));
+    }
   }
 
   &__list-item {

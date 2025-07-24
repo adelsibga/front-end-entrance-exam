@@ -1,5 +1,6 @@
 @forward 'base';
 @forward 'utilities';
+@forward 'animations/ripple';
 
 $block-list: (
         'profile',
@@ -18,12 +19,41 @@ $block-list: (
   margin: 0 auto;
   padding: calc(7.5 * var(--size-x1)) var(--size-x10);
   gap: var(--size-x10);
-  grid-template-columns: repeat(4, calc(62 * var(--size-x1)));
+  grid-template-columns: 1fr;
   grid-template-areas:
+    'profile'
+    'name'
+    'languages'
+    'experience'
+    'tools'
+    'education'
+    'interests'
+    'contact';
+}
+
+@media (min-width: 620px) {
+  #app {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    'profile name'
+    'languages languages'
+    'experience experience'
+    'tools education'
+    'tools education'
+    'interests interests'
+    'contact contact';
+  }
+}
+
+@media (min-width: 1024px) {
+  #app {
+    grid-template-columns: repeat(4, calc(62 * var(--size-x1)));
+    grid-template-areas:
     'profile name languages languages'
     'experience experience experience tools'
     'education education interests interests'
     'education education contact contact';
+  }
 }
 
 .block {

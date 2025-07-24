@@ -1,0 +1,11 @@
+.ripple {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transition: transform .3s, opacity .3s;
+  transform: scale(var(--scale, 0));
+  pointer-events: none;
+  opacity: 1;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+}

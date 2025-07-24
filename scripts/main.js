@@ -1,20 +1,21 @@
-import '../styles/_index.scss'
+import '../styles/_index.scss';
 
 import { resumeData } from './config/resumeData.js';
-import { setEditableListener } from './utils/editable.js'
-import { initSavePDFButton } from './utils/pdf-export.js'
-import { drawMenu } from './components/menu'
-import { drawProfileSection } from './components/profile'
-import { drawNameSection } from './components/name'
-import { drawLanguagesSection } from './components/languages'
-import { drawExperienceSection } from './components/experience'
-import { drawToolsSection } from './components/tools'
-import { drawEducationSection } from './components/education'
-import { drawInterestsSection } from './components/interests'
-import { drawContactSection } from './components/contact'
+import { setEditableListener } from './utils/editable.js';
+import { initSavePDFButton } from './utils/pdf-export.js';
+import { drawMenu } from './components/menu';
+import { drawProfileSection } from './components/profile';
+import { drawNameSection } from './components/name';
+import { drawLanguagesSection } from './components/languages';
+import { drawExperienceSection } from './components/experience';
+import { drawToolsSection } from './components/tools';
+import { drawEducationSection } from './components/education';
+import { drawInterestsSection } from './components/interests';
+import { drawContactSection } from './components/contact';
+import { initRippleEffect } from './animations/rippleEffect.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelector('#menu').innerHTML = drawMenu()
+  document.querySelector('#menu').innerHTML = drawMenu();
 
   document.querySelector('#app').innerHTML = [
     drawProfileSection(resumeData.profile),
@@ -25,8 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
     drawEducationSection(resumeData.education),
     drawInterestsSection(resumeData.interests),
     drawContactSection(resumeData.contact),
-  ].join('')
+  ].join('');
 
-  setEditableListener()
-  initSavePDFButton('#save-pdf')
-})
+  initRippleEffect();
+  setEditableListener();
+  initSavePDFButton('#save-pdf');
+});
