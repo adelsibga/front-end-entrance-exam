@@ -1,0 +1,79 @@
+$icon-size: calc(5.5 * var(--size-x1));
+
+.education {
+  &__title {
+    margin-block-end: var(--size-x8);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--size-x6);
+
+    & .list-item {
+      width: calc(58 * var(--size-x1));
+      height: min-content;
+      padding: var(--size-x4);
+      border-radius: var(--size-x5);
+      background-color: var(--white);
+
+      &_recent {
+        position: relative;
+        color: var(--white);
+        background-color: var(--accent);
+
+        &::before {
+          position: absolute;
+          width: $icon-size;
+          height: $icon-size;
+          content: '';
+          background: url('/public/icons/heart.svg') center center no-repeat;
+          background-size: cover;
+          inset-block-start: calc(5.5 * var(--size-x1));
+          inset-inline-end: var(--size-x4);
+        }
+      }
+
+      &__date {
+        margin-block-end: var(--size-x4);
+
+        &_recent {
+          max-width: calc(100% - $icon-size - var(--size-x1));
+        }
+      }
+
+      &__title {
+
+      }
+
+      &__tag-list {
+
+      }
+
+      &__place {
+        margin-block-start: var(--size-x4);
+      }
+    }
+
+    .tag-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-width: calc(42.5 * var(--size-x1));
+      column-gap: var(--size-x1);
+
+      &__item {
+        color: var(--accent-5);
+
+        &_recent {
+          color: #ebf9f2;
+        }
+      }
+    }
+  }
+
+  &__list-item {
+
+  }
+}

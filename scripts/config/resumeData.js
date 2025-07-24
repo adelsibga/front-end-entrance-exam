@@ -81,4 +81,46 @@ export const resumeData = {
       },
     ]
   },
+  education: {
+    title: 'Education',
+    list: [
+      {
+        date: '2017',
+        title: 'Graphic design',
+        tags: [
+          'branding',
+          'web',
+          'illustration',
+          'adobe',
+        ],
+        place: 'Coursera'
+      },
+      {
+        date: '2017 - 2022',
+        title: 'Law',
+        tags: [
+          'law',
+          'legalStudies',
+          'contracts',
+          'internationalLaws',
+        ],
+        place: 'University of Kerala'
+      },
+      {
+        date: '2023',
+        title: 'UI/UX',
+        tags: [
+          'UX',
+          'UI',
+          'research',
+          'DesignSystem',
+          'Ui',
+          'wireframing',
+          'figma',
+          'Ux',
+        ],
+        place: 'Coursera'
+      }
+    ],
+  }
 };

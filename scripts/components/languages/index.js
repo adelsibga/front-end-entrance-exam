@@ -23,7 +23,7 @@ export function drawLanguagesSection(data) {
   return `
     <div class='languages block block_languages'>
       <h2 class='languages__title text-7 f-w-500' contenteditable data-key='languages.title'>
-        ${data.title}
+        ${!!data.title ? data.title : 'Languages'}
       </h2>
       <ul class='languages__list list-type-none'>
         ${languagesItem}

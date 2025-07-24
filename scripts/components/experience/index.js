@@ -76,7 +76,7 @@ export function drawExperienceSection(data) {
         contenteditable 
         data-key='experience.title'
       >
-        ${data.title}
+        ${!!data.title ? data.title : 'Experience'}
       </h2>
       ${!!listContent ? `
         <ul class='experience__list'>

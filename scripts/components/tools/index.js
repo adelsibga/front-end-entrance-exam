@@ -42,12 +42,12 @@ export function drawToolsSection(data) {
           contenteditable 
           data-key='tools.title'
         >
-          ${data.title}
+        ${!!data.title ? data.title : 'Tools'}
         </h2>
         <div class='tools__wrapper'>
           ${data.list?.length
     ? data.list.map((item, index) => renderToolCategory(item, index)).join('')
-    : '<p class="tools__empty">No tools available</p>'
+    : '<p class="tools__empty text-4 f-w-500">No tools available</p>'
   }
       </div>
     </div>
