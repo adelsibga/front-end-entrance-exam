@@ -44,14 +44,6 @@ $icon-size: calc(5.5 * var(--size-x1));
         }
       }
 
-      &__title {
-
-      }
-
-      &__tag-list {
-
-      }
-
       &__place {
         margin-block-start: var(--size-x4);
       }
@@ -72,9 +64,5 @@ $icon-size: calc(5.5 * var(--size-x1));
         }
       }
     }
-  }
-
-  &__list-item {
-
   }
 }

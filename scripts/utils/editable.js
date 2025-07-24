@@ -1,32 +1,32 @@
 export function setEditableListener() {
-  const editableElements = document.querySelectorAll('[contenteditable]')
+  const editableElements = document.querySelectorAll('[contenteditable]');
 
   editableElements.forEach(el => {
-    const key = el.dataset.key
-    const savedValue = localStorage.getItem(key)
+    const key = el.dataset.key;
+    const savedValue = localStorage.getItem(key);
     if (savedValue) {
-      el.innerHTML = savedValue
+      el.innerHTML = savedValue;
     }
-  })
+  });
 
   editableElements.forEach(el => {
     el.addEventListener('blur', () => {
-      const key = el.dataset.key
-      const value = el.innerHTML.trim()
+      const key = el.dataset.key;
+      const value = el.innerHTML.trim();
 
       if (value) {
-        localStorage.setItem(key, value)
+        localStorage.setItem(key, value);
       }
       else {
-        localStorage.removeItem(key)
+        localStorage.removeItem(key);
       }
-    })
+    });
 
     el.addEventListener('keydown', (e) => {
       if (e.key === 'Enter') {
-        e.preventDefault()
-        el.blur()
+        e.preventDefault();
+        el.blur();
       }
-    })
-  })
+    });
+  });
 }

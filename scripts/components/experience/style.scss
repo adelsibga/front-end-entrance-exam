@@ -9,10 +9,6 @@
     row-gap: var(--size-x5);
   }
 
-  &__list {
-
-  }
-
   &__list-item {
     display: flex;
     flex-direction: column;
@@ -24,20 +20,6 @@
     &_recent {
       color: var(--white);
       background-color: var(--accent);
-    }
-
-    &_empty-experience {
-
-    }
-
-    & .list-item {
-      &__header {
-
-      }
-
-      &__body {
-
-      }
     }
 
     & .header {
@@ -66,10 +48,6 @@
       flex-direction: row;
       justify-content: space-between;
       row-gap: var(--size-x8);
-
-      &__position {
-
-      }
 
       &__format {
         &_recent {
