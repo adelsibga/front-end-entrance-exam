@@ -1,0 +1,14 @@
+.contact {
+  color: var(--white);
+  border-radius: var(--size-x6);
+  background-color: var(--black);
+
+  &__title {
+    margin-block-end: var(--size-x5);
+  }
+
+  &__email {
+    text-decoration: none;
+    color: #dddddd;
+  }
+}

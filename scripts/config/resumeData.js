@@ -138,4 +138,8 @@ export const resumeData = {
       'games',
     ],
   },
+  contact: {
+    title: 'Let´s chat! I´m ready to work on exciting projects',
+    email: 'srkarthik.designscape@gmail.com',
+  },
 };
