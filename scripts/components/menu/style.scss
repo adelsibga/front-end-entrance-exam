@@ -1,0 +1,28 @@
+.menu {
+  background-color: var(--gray-light);
+
+  &__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1192px;
+    padding: var(--size-x8) var(--size-x10);
+    margin-inline: auto;
+  }
+
+  &__button {
+    font: inherit;
+    padding: var(--size-x3);
+    cursor: pointer;
+    transition: background-color .3s;
+    color: var(--white);
+    border: none;
+    border-radius: var(--size-x2);
+    background-color: var(--accent);
+
+    &:focus,
+    &:hover,
+    &:active {
+      background-color: rgba(40, 217, 121, .9);
+    }
+  }
+}
